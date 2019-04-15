@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springcloudweb?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: UvcO12345@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  typeAliasesPackage: com.sora.nimi.entity
+  mapper-locations: classpath:mapper/*.xml
+  configLocation: classpath:mybatis/mybatis-config.xml
+logging:
+  config: classpath:log4j2/log4j2.xml
+  level:
+    com.sora.nimi.dao: debug
